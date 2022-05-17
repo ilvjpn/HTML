@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | Tablo Ekle | CSS Inline</title>
+    <style>
+      /* burasi artik CSS codelari icerir */
+
+      /* CSS Selector ile istebile html elemanlarina stillendirme yapilabilir */
+
+      /* style etiketi ile sadece bu dosya icin olur baska dosyadakiler icin stillendirme olmaz */
+
+      /* eger tum proje dosyalarini kapsamasini istersek ozaman harici CSS dosyaysi gerekir ve bu dosyayi HTLM import etmak gerekir  */
+
+      /* * {} isareti ise hepsini etkiler */
+
+      * {
+        text-align: center;
+      }
+
+      h1 {
+        color: rgb(14, 92, 59);
+        font-size: 55px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin-top: 50px;
+      }
+      p {
+        color: blue;
+      }
+      #p1 {
+        color: brown;
+      }
+      .p2 {
+        color: aqua;
+        font-family: monospace;
+        font-size: 20px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TABLO EKLEME</h1>
+    <h1>CSS stillendirma</h1>
+
+    <!-- ID bir Css Slectordir ve tek element stil olacaksa kullanilmasi mantiklidir  -->
+
+    <!-- ID ye ulasmak icin # kullnilir -->
+
+    <!-- class seletoru ise grup stili icin kullanilir -->
+
+    <p id="p1">Bu bir paragraftir</p>
+    <p class="p2">Bu da baska bir paragraftir</p>
+    <p class="p2">CSS HTMl ye gore daha fazla detay icermektedir</p>
+  </body>
+</html>

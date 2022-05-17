@@ -1,0 +1,58 @@
+* {
+  text-align: center;
+}
+
+h1 {
+  color: darkgoldenrod;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  text-align: center;
+  border: 2px dotted rebeccapurple;
+}
+p {
+  border: 1px solid red;
+}
+
+/* solid || double  ||  dashed  seklinde cigi sekilleri verilebilir Border etiketi ile */
+
+/* 1. sira cizgi kalinligi
+   2. sira cizgi turu
+   3. sira cizgi rengi olir. */
+
+.tablo {
+  /* cizgi olusturmak icin */
+  border: 2px solid slateblue;
+  /* cizgileri butunlestirmek icin */
+  border-collapse: collapse;
+
+  width: 50%; /* Yuzdelik kisim sayfaya gore olur */
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* th ID ADI  yerine cizgi koymak icin */
+th {
+  background-color: aqua;
+  border: 2px solid slateblue;
+}
+th,
+td {
+  border: 2px solid slateblue;
+}
+
+/* ustune gittigimizde tablonun rengini degistirmek icin ilk once hover etiketini yazmayiliz cunku hareketlilik katar */
+
+tr:hover {
+  background-color: beige;
+}
+
+td:hover {
+  background-color: rgb(131, 223, 131);
+}
+
+/* Zebra seklinde renklendirmek icin  even zebra gibi odd tek yapar*/
+
+tr:nth-child(even) {
+  background-color: rgb(169, 185, 215);
+}

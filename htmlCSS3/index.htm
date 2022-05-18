@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fromlar</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+
+    <!-- Veri giris alani demek input -->
+
+    <!-- input icine golgeli yazi icin placeholder="" -->
+
+    <!-- Aciklama yapmak veya kutuyu tanimlamak icin LABEL -->
+
+    <!-- for ise eger inputa id verir o id ile for ayni olursa input adina tikladigimiz zaman onu etkiler -->
+
+    <!-- Action submit butonu yapinca onu kaydet datasina gondeermek icin -->
+
+    <!-- required="" girmesi zorunlu anlamindadir. -->
+
+    <form action="kaydet.php">
+      <label for="etki">Ad :</label>
+      <input
+        maxlength="7"
+        name="ad"
+        value=""
+        class="input"
+        id="etki"
+        type="text"
+        placeholder="Adinizi giriniz"
+      />
+      <br />
+
+      <label for="sifre">Sifre :</label>
+      <input
+        class="input"
+        id="sifre"
+        type="password"
+        placeholder="Sifrenizi giriniz"
+        required=""
+      />
+      <br />
+
+      <label for="yas">Yas :</label>
+      <input
+        name="yas"
+        value=""
+        class="input"
+        id="yas"
+        type="number"
+        placeholder="Yas giriniz"
+        max="100"
+        min="1"
+      />
+      <br />
+      <label for="mail">E-mail :</label>
+      <input
+        class="input"
+        type="email"
+        name="mail"
+        value=""
+        id="mail"
+        placeholder="Mail giriniz"
+      />
+
+      <br />
+
+      <input type="submit" value="Gonder" />
+      <input type="button" value="Temizle" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Display</title>
+  </head>
+  <body>
+    <!-- display nesnelerin ozalliklereini degistiren bir ozlliktir -->
+    <!-- ** Aynı CSS'de olduğu gibi Bootstrap ile de nesnelerin display özellikleri değiştirilebilir. Display classları hakkında ayrıntılı bilgi için 
+      ! https://getbootstrap.com/docs/5.0/utilities/display/ -->
+
+    <div class="container">
+      <h1 class="h1 text-center text-primary display-3 fw-bold">Display</h1>
+    </div>
+
+    <div class="container text-center">
+      <!-- asagidaki kod diyor ki sm'ye geldiginde gozukme kapatilsin lg xl de de gozukmeyecek -->
+      <div class="bg-danger d-sm-none">1</div>
+      <div class="bg-primary d-none d-sm-flex">2</div>
+      <div class="bg-secondary d-none d-md-grid d-lg-none">3</div>
+      <div class="bg-info d-md-none d-lg-grid">4</div>
+    </div>
+
+    <!-- ? fixed-top sayfanın üzerine fixed-bottom ise sayfanın altına nesneleri yapıştırır.
+    ? Ayrıntılı bilgi için 
+    ! https://getbootstrap.com/docs/4.0/utilities/position/ -->
+
+    <!-- ** margin ve padding hakkında ayrıntılı bilgi için
+      ! https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+
+    <div
+      class="container-fluid d-flex justify-content-between p-3 bg-dark text-light mt-3 fixed-bottom mb-2"
+    >
+      <div class="">
+        <i class="fa-solid fa-phone text-warning fs-5"> </i>
+        <span class="me-2 d-none d-md-inline-flex fs-5"> +90553769695</span>
+        <i class="fa-brands fa-whatsapp text-warning fs-3 ms-3"></i>
+        <span class="d-none d-md-inline-flex fs-5">+9055376258</span>
+      </div>
+
+      <div class="">
+        <i class="fa-brands fa-instagram text-primary mx-2 fs-3"></i>
+
+        <i class="fs-3 fa-brands fa-twitter text-primary mx-2"></i>
+        <i class="fs-3 fa-brands fa-youtube text-primary mx-2"></i>
+        <span class="text-light d-none d-xl-inline fs-4 text-center"
+          >#YILMAZ</span
+        >
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
